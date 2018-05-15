@@ -8,37 +8,74 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class AddPassenger extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setAttribute("errors", false);
+
         String firstName = request.getParameter("first-name");
+        System.out.println("firstName: " + firstName);
 
-        //check if first name is null then throw an error
-        if(firstName.length() == 0){
-            System.out.print("Empty first name error");
+        if (firstName.length() == 0) {
+            System.out.println("empty first name error");
+
             request.setAttribute("errors", true);
-            request.setAttribute("first-name_error", true);
+            request.setAttribute("firstname_error", true);
+
         }
+
         String lastName = request.getParameter("last-name");
+        System.out.println("lastName: " + lastName);
 
-        String dobRaw = request.getParameter("dob");
+        if (lastName.length() == 0) {
+            System.out.println("empty last name error");
 
-        //generating the date format accordingly
-        String[] dobArray = dobRaw.split("\\/");
-        String day = dobArray[0];
-        String month = dobArray[1];
-        String year = dobArray[2];
+            request.setAttribute("errors", true);
+            request.setAttribute("lastname_error", true);
 
-        //setting the date format to calender
-        Calendar calendar = Calendar.getInstance();
-        calendar.set(Calendar.YEAR, Integer.parseInt(year));
-        calendar.set(Calendar.MONTH, Integer.parseInt(month));
-        calendar.set(Calendar.DATE, Integer.parseInt(day));
-        Date dob = calendar.getTime();
-        System.out.println(dob);
+        }
+
+        String dob_raw = request.getParameter("dob");
+
+        String dobArray[] = dob_raw.split("\\/");
+
+        String pattern = "^\\d{1,2}\\/\\d{1,2}\\/\\d{4}$";
+        Pattern r = Pattern.compile(pattern);
+
+        Matcher m = r.matcher(dob_raw);
+
+        if (m.find()) {
+
+            String day = dobArray[0];
+            String month = dobArray[1];
+            String year = dobArray[2];
+
+            Calendar cal = Calendar.getInstance();
+
+            cal.set(Calendar.YEAR, Integer.parseInt(year));
+            cal.set(Calendar.MONTH, Integer.parseInt(month));
+            cal.set(Calendar.DAY_OF_MONTH, Integer.parseInt(day));
+
+            Date dob = cal.getTime();
+
+            System.out.println(dob);
+
+        } else {
+            System.out.println("Invalid date of birth");
+            request.setAttribute("errors", true);
+            request.setAttribute("date_format_error", true);
+        }
 
         String gender = request.getParameter("gender");
+        System.out.println("gender: " + gender);
+
+        if((Boolean)request.getAttribute("errors")){
+            request.getRequestDispatcher("WEB-INF/views/add_passenger.jsp").forward(request, response);
+
+        }
 
     }
 

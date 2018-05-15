@@ -107,3 +107,9 @@ legend {
 	font-size: 20px;
 	text-align: center;
 }
+
+li.error {
+	text-align: left;
+	color: red;
+	font-weight: bold;
+}
