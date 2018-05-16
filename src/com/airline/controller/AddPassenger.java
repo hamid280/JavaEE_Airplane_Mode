@@ -3,6 +3,7 @@ package com.airline.controller;
 import com.airline.models.Gender;
 import com.airline.models.Passenger;
 
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -93,10 +94,14 @@ public class AddPassenger extends HttpServlet {
 
         //if everything went right then add the passenger to the list
         else {
-            ArrayList<Passenger> passengersList = new ArrayList<>();
+            ServletContext sc = this.getServletContext();
+
+            ArrayList<Passenger> passengersList = (ArrayList<Passenger>) sc.getAttribute("passengers");
             passengersList.add(passenger);
+            sc.setAttribute("passengers", passengersList);
 
             response.sendRedirect("/");
+
         }
 
     }
