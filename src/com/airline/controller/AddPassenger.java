@@ -3,6 +3,7 @@ package com.airline.controller;
 import com.airline.models.Gender;
 import com.airline.models.Passenger;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -18,9 +19,12 @@ import java.util.regex.Pattern;
 
 public class AddPassenger extends HttpServlet {
 
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request,
+                          HttpServletResponse response) throws ServletException, IOException {
+
         request.setAttribute("errors", false);
-        Passenger passenger = new Passenger();
+
+        Passenger p = new Passenger();
 
         String firstName = request.getParameter("first-name");
         System.out.println("firstName: " + firstName);
@@ -30,9 +34,11 @@ public class AddPassenger extends HttpServlet {
 
             request.setAttribute("errors", true);
             request.setAttribute("firstname_error", true);
+            request.setAttribute("first_name", "");
 
         } else {
-            passenger.setFirstName(firstName);
+            p.setFirstName(firstName);
+            request.setAttribute("first_name", firstName);
         }
 
         String lastName = request.getParameter("last-name");
@@ -43,9 +49,11 @@ public class AddPassenger extends HttpServlet {
 
             request.setAttribute("errors", true);
             request.setAttribute("lastname_error", true);
+            request.setAttribute("last_name", "");
 
         } else {
-            passenger.setLastName(lastName);
+            p.setLastName(lastName);
+            request.setAttribute("last_name", lastName);
         }
 
         String dob_raw = request.getParameter("dob");
@@ -59,8 +67,8 @@ public class AddPassenger extends HttpServlet {
 
         if (m.find()) {
 
-            String day = dobArray[0];
-            String month = dobArray[1];
+            String month = dobArray[0];
+            String day = dobArray[1];
             String year = dobArray[2];
 
             Calendar cal = Calendar.getInstance();
@@ -73,33 +81,41 @@ public class AddPassenger extends HttpServlet {
 
             System.out.println(dob);
 
-            passenger.setDob(dob);
+            p.setDob(dob);
+            request.setAttribute("dob", dob_raw);
 
         } else {
             System.out.println("Invalid date of birth");
             request.setAttribute("errors", true);
             request.setAttribute("date_format_error", true);
+            request.setAttribute("dob", dob_raw);
+            if(dob_raw.length() == 0) {
+                request.setAttribute("dob", "");
+            }
         }
 
         String gender = request.getParameter("gender");
         System.out.println("gender: " + gender);
-        passenger.setGender(Gender.valueOf(gender));
+        p.setGender(Gender.valueOf(gender));
 
-
-        //is sth had gone wrong go to add_passenger.jsp and deal with it
         if ((Boolean) request.getAttribute("errors")) {
-            request.getRequestDispatcher("WEB-INF/views/add_passenger.jsp").forward(request, response);
 
-        }
+            RequestDispatcher view = request
+                    .getRequestDispatcher("WEB-INF/views/add_passenger.jsp");
 
-        //if everything went right then add the passenger to the list
-        else {
+            view.forward(request, response);
+
+        } else {
+
             ServletContext sc = this.getServletContext();
 
             synchronized (this) {
-                ArrayList<Passenger> passengersList = (ArrayList<Passenger>) sc.getAttribute("passengers");
-                passengersList.add(passenger);
-                sc.setAttribute("passengers", passengersList);
+                ArrayList<Passenger> pList = (ArrayList<Passenger>) sc
+                        .getAttribute("passengers");
+
+                pList.add(p);
+
+                sc.setAttribute("passengers", pList);
             }
 
             response.sendRedirect("/");
@@ -107,8 +123,10 @@ public class AddPassenger extends HttpServlet {
         }
 
     }
-
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setAttribute("first_name", "");
+        request.setAttribute("last_name", "");
+        request.setAttribute("dob", "");
         request.getRequestDispatcher("WEB-INF/views/add_passenger.jsp").forward(request, response);
     }
 }
