@@ -1,5 +1,8 @@
 package com.airline.controller;
 
+import com.airline.models.Gender;
+import com.airline.models.Passenger;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -15,6 +18,7 @@ public class AddPassenger extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setAttribute("errors", false);
+        Passenger passenger = new Passenger();
 
         String firstName = request.getParameter("first-name");
         System.out.println("firstName: " + firstName);
@@ -25,6 +29,8 @@ public class AddPassenger extends HttpServlet {
             request.setAttribute("errors", true);
             request.setAttribute("firstname_error", true);
 
+        } else {
+            passenger.setFirstName(firstName);
         }
 
         String lastName = request.getParameter("last-name");
@@ -36,6 +42,8 @@ public class AddPassenger extends HttpServlet {
             request.setAttribute("errors", true);
             request.setAttribute("lastname_error", true);
 
+        } else {
+            passenger.setLastName(lastName);
         }
 
         String dob_raw = request.getParameter("dob");
@@ -63,6 +71,8 @@ public class AddPassenger extends HttpServlet {
 
             System.out.println(dob);
 
+            passenger.setDob(dob);
+
         } else {
             System.out.println("Invalid date of birth");
             request.setAttribute("errors", true);
@@ -71,6 +81,7 @@ public class AddPassenger extends HttpServlet {
 
         String gender = request.getParameter("gender");
         System.out.println("gender: " + gender);
+        passenger.setGender(Gender.valueOf(gender));
 
         if((Boolean)request.getAttribute("errors")){
             request.getRequestDispatcher("WEB-INF/views/add_passenger.jsp").forward(request, response);
