@@ -87,7 +87,7 @@ public class AddPassenger extends HttpServlet {
 
 
         //is sth had gone wrong go to add_passenger.jsp and deal with it
-        if((Boolean)request.getAttribute("errors")){
+        if ((Boolean) request.getAttribute("errors")) {
             request.getRequestDispatcher("WEB-INF/views/add_passenger.jsp").forward(request, response);
 
         }
@@ -96,9 +96,11 @@ public class AddPassenger extends HttpServlet {
         else {
             ServletContext sc = this.getServletContext();
 
-            ArrayList<Passenger> passengersList = (ArrayList<Passenger>) sc.getAttribute("passengers");
-            passengersList.add(passenger);
-            sc.setAttribute("passengers", passengersList);
+            synchronized (this) {
+                ArrayList<Passenger> passengersList = (ArrayList<Passenger>) sc.getAttribute("passengers");
+                passengersList.add(passenger);
+                sc.setAttribute("passengers", passengersList);
+            }
 
             response.sendRedirect("/");
 
