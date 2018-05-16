@@ -7,10 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="128b3fd5-191d-432d-8e88-eb5c6423b9aa" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/airline/controller/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaEE_AiroPlane_Project_war_exploded/WEB-INF/classes/com/airline/controller/AddPassenger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaEE_AiroPlane_Project/com/airline/controller/AddPassenger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaEE_AiroPlane_Project_war_exploded/WEB-INF/classes/com/airline/controller/AddPassenger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JavaEE_AiroPlane_Project_war_exploded/WEB-INF/classes/com/airline/controller/AddPassenger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaEE_AiroPlane_Project/com/airline/controller/AddPassenger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaEE_AiroPlane_Project/com/airline/controller/AddPassenger.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/airline/controller/AddPassenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/airline/controller/AddPassenger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,14 +24,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AddPassenger.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AddPassenger.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/airline/controller/AddPassenger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="88" column="9" lean-forward="true" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
+            <state relative-caret-position="283">
+              <caret line="98" column="36" selection-start-line="98" selection-start-column="36" selection-end-line="98" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/airline/controller/MainPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -87,11 +107,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/controller/AddPassenger.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/com/airline/models/Gender.java" />
         <option value="$PROJECT_DIR$/src/com/airline/models/Passenger.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/add_passenger.jsp" />
         <option value="$PROJECT_DIR$/src/com/airline/controller/AddPassenger.java" />
+        <option value="$PROJECT_DIR$/src/com/airline/controller/MainPage.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -148,7 +169,32 @@
               <item name="JavaEE_Airplane_Mode_Clone" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="airline" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEE_Airplane_Mode_Clone" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="airline" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEE_Airplane_Mode_Clone" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEE_Airplane_Mode_Clone" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEE_Airplane_Mode_Clone" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web3" type="b2602c69:ProjectViewProjectNode" />
@@ -286,12 +332,12 @@
       <option name="presentableId" value="Default" />
       <updated>1526417841182</updated>
       <workItem from="1526417846288" duration="7019000" />
-      <workItem from="1526486679205" duration="1161000" />
+      <workItem from="1526486679205" duration="1992000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8180000" />
+    <option name="totallyTimeSpent" value="9011000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -315,11 +361,11 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3293718" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3293718" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16111952" />
-      <window_info id="Web" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49873418" visible="true" weight="0.16111952" />
+      <window_info id="Web" order="2" sideWeight="0.5012658" side_tool="true" weight="0.16111952" />
       <window_info id="Learn" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -355,13 +401,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/airline/models/Gender.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -376,6 +415,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/airline/controller/AddPassenger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="98" column="36" selection-start-line="98" selection-start-column="36" selection-end-line="98" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -404,13 +453,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/airline/controller/AddPassenger.java">
+    <entry file="file://$PROJECT_DIR$/src/com/airline/controller/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="88" column="9" lean-forward="true" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
         </state>
       </provider>
     </entry>

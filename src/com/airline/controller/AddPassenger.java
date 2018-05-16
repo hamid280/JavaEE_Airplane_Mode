@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.regex.Matcher;
@@ -83,9 +84,19 @@ public class AddPassenger extends HttpServlet {
         System.out.println("gender: " + gender);
         passenger.setGender(Gender.valueOf(gender));
 
+
+        //is sth had gone wrong go to add_passenger.jsp and deal with it
         if((Boolean)request.getAttribute("errors")){
             request.getRequestDispatcher("WEB-INF/views/add_passenger.jsp").forward(request, response);
 
+        }
+
+        //if everything went right then add the passenger to the list
+        else {
+            ArrayList<Passenger> passengersList = new ArrayList<>();
+            passengersList.add(passenger);
+
+            response.sendRedirect("/");
         }
 
     }

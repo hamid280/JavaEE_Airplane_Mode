@@ -8,8 +8,16 @@
         <servlet-name>AddPassenger</servlet-name>
         <servlet-class>com.airline.controller.AddPassenger</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>MainPage</servlet-name>
+        <servlet-class>com.airline.controller.MainPage</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddPassenger</servlet-name>
         <url-pattern>/AddPassenger</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MainPage</servlet-name>
+        <url-pattern></url-pattern>
     </servlet-mapping>
 </web-app>
