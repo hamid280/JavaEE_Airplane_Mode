@@ -7,8 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="128b3fd5-191d-432d-8e88-eb5c6423b9aa" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/airline/controller/AddPassenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/airline/controller/AddPassenger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/add_passenger.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/add_passenger.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/JavaEE_AiroPlane_Project_ejb_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaEE_AiroPlane_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaEE_AiroPlane_Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaEE_AiroPlane_Project_war_exploded/WEB-INF/classes/com/airline/controller/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/JavaEE_AiroPlane_Project_war_exploded/WEB-INF/classes/com/airline/controller/MainPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaEE_AiroPlane_Project/com/airline/controller/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaEE_AiroPlane_Project/com/airline/controller/MainPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/airline/controller/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/airline/controller/MainPage.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +29,8 @@
       <file leaf-file-name="AddPassenger.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/airline/controller/AddPassenger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="128" column="40" selection-start-line="128" selection-start-column="40" selection-end-line="128" selection-end-column="40" />
+            <state relative-caret-position="1173">
+              <caret line="84" column="49" selection-start-line="84" selection-start-column="49" selection-end-line="84" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,7 +38,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add_passenger.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/airline/controller/MainPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="14" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_passenger.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/add_passenger.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1734">
@@ -48,6 +72,7 @@
       <list>
         <option value="Class" />
         <option value="Enum" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -63,9 +88,16 @@
         <option value="$PROJECT_DIR$/src/com/airline/controller/deneme.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/com/airline/controller/AirlineListener.java" />
-        <option value="$PROJECT_DIR$/src/com/airline/controller/MainPage.java" />
-        <option value="$PROJECT_DIR$/src/com/airline/controller/AddPassenger.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/add_passenger.jsp" />
+        <option value="$PROJECT_DIR$/src/com/airline/controller/AddPassenger.java" />
+        <option value="$PROJECT_DIR$/src/com/airline/service/FlightService2Bean.java" />
+        <option value="$PROJECT_DIR$/src/com/airline/controller/bean/SessionBean.java" />
+        <option value="$PROJECT_DIR$/src/com/airline/controller/MainPage.java" />
+        <option value="$PROJECT_DIR$/src/com/airline/controller/Inject.java" />
+        <option value="$PROJECT_DIR$/src/com/airline/controller/SessionBean.java" />
+        <option value="$PROJECT_DIR$/src/com/airline/service/FlightService.java" />
+        <option value="$PROJECT_DIR$/src/com/airline/service/FlightServiceBean.java" />
+        <option value="$PROJECT_DIR$/src/com/airline/controller/FlightDetails.java" />
       </list>
     </option>
   </component>
@@ -99,12 +131,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="web3" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaEE_Airplane_Mode_Clone" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaEE_Airplane_Mode_Clone" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web3" type="b2602c69:ProjectViewProjectNode" />
@@ -127,13 +166,6 @@
             <path>
               <item name="web3" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaEE_Airplane_Mode_Clone" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="airline" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaEE_Airplane_Mode_Clone" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -141,13 +173,6 @@
               <item name="JavaEE_Airplane_Mode_Clone" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaEE_Airplane_Mode_Clone" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web3" type="b2602c69:ProjectViewProjectNode" />
@@ -157,8 +182,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -168,18 +191,25 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.airline.models" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\engha\Documents\JavaEE_Airplane_Mode_Clone\src\com\airline\controller" />
+      <recent name="C:\Users\engha\Documents\JavaEE_Airplane_Mode_Clone\src\com\airline\service" />
+      <recent name="C:\Users\engha\IdeaProjects\JavaEE_AiroPlane_Project\web\resources\css" />
+      <recent name="C:\Users\engha\IdeaProjects\JavaEE_AiroPlane_Project\web\WEB-INF" />
+      <recent name="C:\Users\engha\IdeaProjects\JavaEE_AiroPlane_Project\web" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="controller" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\engha\IdeaProjects\JavaEE_AiroPlane_Project\web\resources\css" />
-      <recent name="C:\Users\engha\IdeaProjects\JavaEE_AiroPlane_Project\web\WEB-INF" />
-      <recent name="C:\Users\engha\IdeaProjects\JavaEE_AiroPlane_Project\web" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.airline.controller" />
+      <recent name="com.airline.models" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -285,46 +315,48 @@
       <option name="presentableId" value="Default" />
       <updated>1526417841182</updated>
       <workItem from="1526417846288" duration="7019000" />
-      <workItem from="1526486679205" duration="9110000" />
+      <workItem from="1526486679205" duration="9951000" />
+      <workItem from="1526765655803" duration="9004000" />
+      <workItem from="1526851045275" duration="471000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16129000" />
+    <option name="totallyTimeSpent" value="26445000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="8" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
+      <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4227504" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49873418" visible="true" weight="0.16111952" />
-      <window_info id="Web" order="2" sideWeight="0.5012658" side_tool="true" weight="0.16111952" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3293718" />
-      <window_info id="Learn" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.3293718" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4227504" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4974533" visible="true" weight="0.16565809" />
+      <window_info id="Web" order="7" sideWeight="0.50254667" side_tool="true" weight="0.1633888" />
+      <window_info id="Learn" order="6" />
+      <window_info id="EJB" order="9" sideWeight="0.50254667" side_tool="true" weight="0.1633888" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="9" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3293718" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -337,6 +369,61 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/airline/controller/AddPassenger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="84" column="49" selection-start-line="84" selection-start-column="49" selection-end-line="84" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/airline/controller/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/add_passenger.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="102" column="7" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/airline/controller/AddPassenger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="120" column="35" selection-start-line="120" selection-start-column="35" selection-end-line="120" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/airline/controller/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="106" selection-start-line="27" selection-start-column="106" selection-end-line="27" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/add_passenger.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="102" column="7" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/airline/controller/AddPassenger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1139">
@@ -368,62 +455,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
-          <folding>
-            <element signature="e#220#221#0" expanded="true" />
-            <element signature="e#252#253#0" expanded="true" />
-            <element signature="e#302#303#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#526#527#0" expanded="true" />
-            <element signature="e#552#553#0" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/airline/controller/deneme.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/airline/controller/MainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="27" column="106" selection-start-line="27" selection-start-column="106" selection-end-line="27" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/airline/controller/deneme.java" />
     <entry file="file://$PROJECT_DIR$/src/com/airline/controller/AirlineListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/airline/controller/AddPassenger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="128" column="40" selection-start-line="128" selection-start-column="40" selection-end-line="128" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -434,5 +473,111 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/airline/controller/Inject.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/airline/service/FlightService.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/airline/service/FlightService2Bean.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/airline/service/FlightServiceBean.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/airline/controller/FlightDetails.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/airline/controller/AddPassenger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="84" column="49" selection-start-line="84" selection-start-column="49" selection-end-line="84" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/airline/controller/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>JavaEE_AiroPlane_Project:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>JavaEE_AiroPlane_Project</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Java EE 6-Java EE 6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
